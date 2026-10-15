@@ -27,7 +27,7 @@ jobs:
           host: ${{ secrets.TOUGE_SERVER_HOST }} 
           port: "49572"
           username: root
-          key: ${{ secrets.TOUGE_SSH_PRIVATE_KEY }}
+          password: ${{ secrets.TOUGE_SSH_PASSWORD }}
           script: |
             cd /root/flask-web-app
             git pull
